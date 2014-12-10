@@ -1,3 +1,21 @@
+$primary-font: 'Josefin Slab';
+$nav-font: 'Raleway';
+$primary-color: #696969;
+$accent-color: #0f899f;
+$accent-hover-color: #05c1e3;
+$emphasis-color: #000000;
+$emphasis-hover-color: #000000;
 
+@import 'home';
+
+@import 'nav';
 
 @import 'bootstrap';
+
+body{
+  font-family: $primary-font, serif;
+  color: #696969;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+

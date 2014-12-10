@@ -1,0 +1,38 @@
+#home{
+  text-align: center;
+  h1{
+    font-size: 100px;
+    font-weight: 300;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+ .start-greet{
+    text-align: left;
+    margin-top: 45px;
+ } 
+ .end-greet{
+    text-align: right;
+    margin-bottom: 45px;
+  .name{
+    color: $accent-color;
+  } 
+ }
+ .sub-header{
+    font-size: 22px;
+ }
+ .call-to-action{
+  margin-top: 45px;
+  .btn{
+    background: transparent;
+    padding: 15px 30px;
+    color: $accent-color;
+    border: 1px solid $accent-color;
+    font-size: 25px;
+    transition: ease-in 200ms;
+  }
+  .btn:hover{
+    background: $accent-color;
+    color: #fff;
+  }
+ }
+}

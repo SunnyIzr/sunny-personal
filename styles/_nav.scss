@@ -1,0 +1,40 @@
+#nav{
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid $accent-color;
+  text-align: center;
+  font-family: 'Raleway';
+  .nav-list{
+    width: 100%;
+    margin-top: -2px;
+    .nav-list-item{
+      display: inline-block;
+      width: 14%;
+      vertical-align: top;
+      padding-top: 15px;
+      padding-bottom: 14px;
+      cursor: pointer;
+      transition: ease-in 200ms;
+    }
+    .nav-list-item:hover{
+      background: #d5d3d3;
+      color: #fff;
+    }
+    .line-break{
+      display: inline-block;
+      width: 1px;
+      height: 28px;
+      background: $accent-color;
+      margin-top: 12px;
+    }
+    .logo{
+      width: 56px;
+      font-family: 'Nothing You Could Do', cursive;
+      color: #fff;
+      background: $accent-color;
+      font-size: 32px;
+      padding-top: 5px;
+      padding-bottom: 0;
+    }
+  }
+}
