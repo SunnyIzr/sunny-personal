@@ -1,3 +1,18 @@
+#about {
+  text-align: center;
+}
+#about h1 {
+  font-size: 70px;
+  text-align: left;
+  margin: 0 auto;
+  font-weight: 300;
+  max-width: 1000px;
+  margin-top: 25px;
+}
+#about h1 .emphasis {
+  color: #0f899f;
+}
+
 html, body {
   height: 100%;
 }
@@ -12,6 +27,7 @@ html, body {
 }
 
 .pt-page {
+  padding-top: 55px;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -2288,6 +2304,9 @@ html, body {
   border-bottom: 1px solid #0f899f;
   text-align: center;
   font-family: 'Raleway';
+  position: fixed;
+  z-index: 1;
+  background: #fff;
 }
 #nav .nav-list {
   width: 100%;
