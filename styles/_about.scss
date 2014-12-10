@@ -16,7 +16,7 @@
   .body{
     text-align: justify;
     font-size: 21px;
-    padding-top: 25px;
+    padding-top: 40px;
     .video-content{
       margin-top: -20px;
       width: 50%;
@@ -37,6 +37,85 @@
         opacity: 0.5;
       }
     }
-
+    .clearfix{
+      clear: both;
+    }
+    .addl-content{
+      margin-top: 25px;
+    }
+    .my-logos{
+      margin: 35px auto 0;
+      text-align: center;
+      .my-logo{
+        display: inline-block;
+        width: 20%;
+        margin: 0 5%;
+        img{
+          width: 100%;
+        }
+      }
+      .mint{
+        img{
+          width: 70%;
+        }
+      }
+    }
+  }
+  #about2{
+    .body{
+      .video-content{
+        float: left;
+        margin-left: 0;
+        margin-right: 50px;
+      }
+    }
+  }
+  .about-slider{
+    width: 100%;
+    border-top: 5px solid $accent-color;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 400px;
+    a{
+      font-size: 17px;
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      padding: 40px 65px 30px;
+      position: relative;
+      color: #888;
+      outline: none;
+      -webkit-transition: color 0.2s linear;
+      transition: color 0.2s linear;
+      font-weight: 600;
+    }
+    .mi-selected{
+      // color: #000;
+    }
+    .mi-selected:after, .mi-selected:before{
+      content: '';
+      position: absolute;
+      top: -5px;
+      border: solid transparent;
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+    .mi-selected:after{
+      border-color: transparent;
+      border-top-color: #fff;
+      border-width: 20px;
+      left: 50%;
+      margin-left: -20px;
+    }
+    .mi-selected:before{
+      border-color: transparent;
+      border-top-color: $accent-color;
+      border-width: 27px;
+      left: 50%;
+      margin-left: -27px;
+    }
   }
 }

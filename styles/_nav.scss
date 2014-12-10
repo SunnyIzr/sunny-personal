@@ -7,9 +7,9 @@
   position: fixed;
   z-index: 1;
   background: #fff;
+  max-width: 1600px;
   .nav-list{
     width: 100%;
-    margin-top: -2px;
     .nav-list-item{
       display: inline-block;
       width: 14%;
