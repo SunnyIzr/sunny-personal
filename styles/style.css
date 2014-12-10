@@ -2,6 +2,7 @@
   text-align: center;
   max-width: 1000px;
   margin: 0 auto;
+  position: relative;
 }
 #about h1 {
   font-size: 70px;
@@ -64,6 +65,15 @@
   float: left;
   margin-left: 0;
   margin-right: 50px;
+}
+#about .about-section {
+  background: #fff;
+  transition: 300ms opacity ease-in;
+  display: none;
+}
+#about .selected.about-section {
+  opacity: 1.0;
+  display: inherit;
 }
 #about .about-slider {
   width: 100%;
