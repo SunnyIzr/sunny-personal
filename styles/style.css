@@ -1,5 +1,7 @@
 #about {
   text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 #about h1 {
   font-size: 70px;
@@ -11,6 +13,31 @@
 }
 #about h1 .emphasis {
   color: #0f899f;
+}
+#about .body {
+  text-align: justify;
+  font-size: 21px;
+  padding-top: 25px;
+}
+#about .body .video-content {
+  margin-top: -20px;
+  width: 50%;
+  margin-left: 50px;
+  float: right;
+  overflow: hidden;
+  position: relative;
+}
+#about .body .video-content img {
+  width: 100%;
+  position: absolute;
+}
+#about .body .video-content .video-overlay {
+  background: #0f899f;
+  width: 100%;
+  height: 0;
+  padding-bottom: 62.5%;
+  position: relative;
+  opacity: 0.5;
 }
 
 html, body {
