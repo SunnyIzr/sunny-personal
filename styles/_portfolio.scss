@@ -1,0 +1,99 @@
+#portfolio{
+  height: 1000px;
+  padding-top: 10px;
+  h1{
+    font-size: 100px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  .rm-container{
+    position: absolute;
+    height: 550px;
+    max-width: 385px;
+    cursor: pointer;
+    .rm-cover{
+      .rm-front{
+        .pattern{
+          width: 100%;
+        }
+        .hover-pattern{
+          width: 100%;
+          position: absolute;
+          left:0;
+          top:0;
+          opacity: 0.0;
+          transition: opacity 300ms ease-in;
+        }
+        .logo{
+          width: 95%;
+          max-width: 300px;
+          margin-top: 50px;
+        }
+        .hover-logo{
+          width: 95%;
+          max-width: 300px;
+          position: relative;
+          margin-top: -25%;
+          opacity: 0.0;
+          transition: opacity 300ms ease-in;
+        }
+        .info{
+          font-size: 25px;
+          text-align: left;
+          width: 95%;
+          max-width: 300px;
+          margin: 25px auto 0;
+          .more-info{
+            text-align: right;
+            margin-top:10px;
+            transition: color 300ms ease-in;
+          }
+        }
+      }
+    }
+  }
+  
+  .rm-container:hover{
+    .rm-cover{
+      .rm-front{
+        .hover-pattern{
+          opacity: 1.0;
+        }
+        .hover-logo{
+          opacity: 1.0;
+        }
+        .info{
+          .more-info{
+            color: $accent-color;
+          }
+        }
+      }
+    }
+  }
+  
+  #rm-zoraab{
+    left: 2%;
+  }
+  #rm-mint{
+    left: 35%;
+    .rm-cover .rm-front .logo{
+      max-width: 250px;
+    }
+    .rm-cover .rm-front .hover-logo{
+      max-width: 250px;
+      margin-top:-31%;
+    }
+    
+  }
+  #rm-stats{
+    right: 2%;
+    .rm-cover .rm-front .logo{
+      max-width: 250px;
+    }
+    .rm-cover .rm-front .hover-logo{
+      max-width: 250px;
+      margin-top:-15%;
+    }
+  }
+}
