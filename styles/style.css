@@ -47,7 +47,7 @@
 }
 
 .rm-wrapper > div > div {
-  background: white url(../images/white_paperboard.jpg);
+  background: #fff;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -465,6 +465,7 @@ a.rm-viewdetails:hover,
   height: 550px;
   max-width: 385px;
   cursor: pointer;
+  transition: 700ms all ease-in;
 }
 #portfolio .rm-container .rm-cover .rm-front .pattern {
   width: 100%;
@@ -515,7 +516,8 @@ a.rm-viewdetails:hover,
   left: 2%;
 }
 #portfolio #rm-mint {
-  left: 35%;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 #portfolio #rm-mint .rm-cover .rm-front .logo {
   max-width: 220px;
@@ -533,6 +535,32 @@ a.rm-viewdetails:hover,
 #portfolio #rm-stats .rm-cover .rm-front .hover-logo {
   max-width: 250px;
   margin-top: -15%;
+}
+#portfolio #rm-zoraab.unselected-mint {
+  left: -40%;
+}
+#portfolio #rm-zoraab.unselected-stats {
+  left: -80%;
+}
+#portfolio #rm-stats.unselected-mint {
+  right: -40%;
+}
+#portfolio #rm-stats.unselected-zoraab {
+  right: -80%;
+}
+#portfolio #rm-mint.unselected-zoraab {
+  left: 130%;
+}
+#portfolio #rm-mint.unselected-stats {
+  left: -30%;
+}
+#portfolio #rm-zoraab.selected {
+  transform: translate(-50%, 0%);
+  left: 50%;
+}
+#portfolio #rm-stats.selected {
+  transform: translate(50%, 0%);
+  right: 50%;
 }
 
 #about {

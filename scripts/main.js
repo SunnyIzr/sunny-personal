@@ -1,4 +1,6 @@
 $(document).ready(function(){
   Nav.init();
-  About.init()
+  About.init();
+  Portfolio.init();
+  
 })

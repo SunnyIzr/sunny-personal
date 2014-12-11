@@ -12,6 +12,7 @@
     height: 550px;
     max-width: 385px;
     cursor: pointer;
+    transition: 700ms all ease-in;
     .rm-cover{
       .rm-front{
         .pattern{
@@ -76,7 +77,8 @@
     left: 2%;
   }
   #rm-mint{
-    left: 35%;
+    left: 50%;
+    transform: translate(-50%, 0%);
     .rm-cover .rm-front .logo{
       max-width: 220px;
     }
@@ -96,4 +98,40 @@
       margin-top:-15%;
     }
   }
+  
+  
+  #rm-zoraab.unselected-mint{
+    left: -40%;
+  }
+  
+  #rm-zoraab.unselected-stats{
+    left: -80%;
+  }
+  
+  #rm-stats.unselected-mint{
+    right: -40%;
+  }
+  
+   #rm-stats.unselected-zoraab{
+    right: -80%;
+  }
+  
+  #rm-mint.unselected-zoraab{
+    left: 130%;
+  }
+  
+  #rm-mint.unselected-stats{
+    left: -30%;
+  }
+  
+  #rm-zoraab.selected{
+    transform: translate(-50%, 0%);
+    left: 50%;
+  }
+  
+  #rm-stats.selected{
+    transform: translate(50%, 0%);
+    right: 50%;
+  }
+  
 }
