@@ -15,6 +15,7 @@
     transition: 700ms all ease-in;
     .rm-cover{
       .rm-front{
+        transition: opacity 700ms ease-in;
         .pattern{
           width: 100%;
         }
@@ -50,6 +51,150 @@
             margin-top:10px;
             transition: color 300ms ease-in;
           }
+        }
+      }
+      .rm-back{
+        border-right-color: #fff;
+        text-align: left;
+        .mac-pic{
+          width: 150%;
+          margin-top: 65px;
+          margin-left: 40px;
+          visibility: hidden;
+        }
+      }
+    }
+    .rm-middle{
+      .rm-inner{
+        border-left-color: #fff;
+        border-right-color: #fff;
+        text-align: left;
+        overflow: hidden;
+        .mac-pic{
+          opacity: 0.0;
+          width: 150%;
+          margin-top: 65px;
+          margin-left: -90%;
+          transition: opacity ease-in 700ms;
+          transition-delay: 800ms;
+        }      
+        .mac-screen-pic{
+          width: 135.9%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          margin-top: 94px;
+          margin-left: -83%;
+          opacity: 0.0;
+          transition: opacity ease-in 700ms;
+          transition-delay: 800ms;
+        }
+      }
+    }
+    .rm-right{
+      .rm-back{
+        border-left-color: #fff;
+        text-align: right;
+        .close-icon{
+          opacity: 0.0;
+          transition: opacity ease-in 700ms;
+          transition-delay: 800ms;
+          svg{
+            width: 15%;
+            height: 15%;
+            path{
+              fill: $primary-color;
+            }
+          }
+        }
+        .port-logo{
+          opacity: 0.0;
+          transition: opacity ease-in 700ms;
+          transition-delay: 800ms;
+          width: 50%;
+          margin-top: -15px;
+          margin-right: 40px;
+        }
+        .port-desc{
+          text-align: justify;
+          margin-left: -125px;
+          margin-top: 15px;
+          padding-right: 40px;
+          font-size: 17px;
+          opacity: 0.0;
+          transition: opacity ease-in 700ms;
+          transition-delay: 800ms;
+        }
+        .tags{
+          text-align: left;
+          margin-left: -125px;
+          margin-top: 10px;
+          padding-right: 40px;
+          opacity: 0.0;
+          transition: opacity ease-in 700ms;
+          transition-delay: 800ms;
+          .tag{
+            display: inline-block;
+            margin-right: 6px;
+            margin-top: 8px;
+            padding: 3px 6px 0px;
+            background: $accent-color;
+            color: #fff;
+          }
+        }
+        .links{
+          padding-right: 40px;
+          margin-top: 25px;
+          opacity: 0.0;
+          transition: opacity ease-in 700ms;
+          transition-delay: 800ms;
+          a{
+            font-size: 18px;
+            margin-bottom: -10px;
+            display: inline-block;
+          }
+          i{
+            margin-left: 25px;
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+  
+  .rm-container.rm-open{
+    .rm-cover{
+      .rm-front{
+        opacity: 0.0;
+      }
+    }
+    .rm-middle{
+      .rm-inner{
+        overflow: visible;
+        .mac-pic{
+          opacity: 1.0;
+        }
+        .mac-screen-pic{
+          opacity: 1.0;
+        }
+      }
+    } 
+    .rm-right{
+      .rm-back{
+        .close-icon{
+          opacity: 1.0;
+        }
+        .port-logo{
+          opacity: 1.0;
+        }
+        .port-desc{
+          opacity: 1.0;
+        }
+        .tags{
+          opacity: 1.0;
+        }
+        .links{
+          opacity: 1.0;
         }
       }
     }

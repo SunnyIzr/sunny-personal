@@ -61,6 +61,7 @@
 }
 
 .rm-container .rm-back {
+  background: #fff;
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
@@ -72,21 +73,6 @@
   top: 0;
   left: 0;
   pointer-events: none;
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.05)));
-  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
-  background: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
-  background: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
-  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
-}
-
-.rm-middle .rm-overlay {
-  background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 64%, rgba(0, 0, 0, 0.05) 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(64%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.05)));
-  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 64%, rgba(0, 0, 0, 0.05) 100%);
-  background: -o-linear-gradient(left, rgba(0, 0, 0, 0) 64%, rgba(0, 0, 0, 0.05) 100%);
-  background: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 64%, rgba(0, 0, 0, 0.05) 100%);
-  background: linear-gradient(to right, rgba(0, 0, 0, 0) 64%, rgba(0, 0, 0, 0.05) 100%);
 }
 
 .rm-content {
@@ -467,6 +453,9 @@ a.rm-viewdetails:hover,
   cursor: pointer;
   transition: 700ms all ease-in;
 }
+#portfolio .rm-container .rm-cover .rm-front {
+  transition: opacity 700ms ease-in;
+}
 #portfolio .rm-container .rm-cover .rm-front .pattern {
   width: 100%;
 }
@@ -502,6 +491,135 @@ a.rm-viewdetails:hover,
   text-align: right;
   margin-top: 10px;
   transition: color 300ms ease-in;
+}
+#portfolio .rm-container .rm-cover .rm-back {
+  border-right-color: #fff;
+  text-align: left;
+}
+#portfolio .rm-container .rm-cover .rm-back .mac-pic {
+  width: 150%;
+  margin-top: 65px;
+  margin-left: 40px;
+  visibility: hidden;
+}
+#portfolio .rm-container .rm-middle .rm-inner {
+  border-left-color: #fff;
+  border-right-color: #fff;
+  text-align: left;
+  overflow: hidden;
+}
+#portfolio .rm-container .rm-middle .rm-inner .mac-pic {
+  opacity: 0.0;
+  width: 150%;
+  margin-top: 65px;
+  margin-left: -90%;
+  transition: opacity ease-in 700ms;
+  transition-delay: 800ms;
+}
+#portfolio .rm-container .rm-middle .rm-inner .mac-screen-pic {
+  width: 135.9%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 94px;
+  margin-left: -83%;
+  opacity: 0.0;
+  transition: opacity ease-in 700ms;
+  transition-delay: 800ms;
+}
+#portfolio .rm-container .rm-right .rm-back {
+  border-left-color: #fff;
+  text-align: right;
+}
+#portfolio .rm-container .rm-right .rm-back .close-icon {
+  opacity: 0.0;
+  transition: opacity ease-in 700ms;
+  transition-delay: 800ms;
+}
+#portfolio .rm-container .rm-right .rm-back .close-icon svg {
+  width: 15%;
+  height: 15%;
+}
+#portfolio .rm-container .rm-right .rm-back .close-icon svg path {
+  fill: dimgrey;
+}
+#portfolio .rm-container .rm-right .rm-back .port-logo {
+  opacity: 0.0;
+  transition: opacity ease-in 700ms;
+  transition-delay: 800ms;
+  width: 50%;
+  margin-top: -15px;
+  margin-right: 40px;
+}
+#portfolio .rm-container .rm-right .rm-back .port-desc {
+  text-align: justify;
+  margin-left: -125px;
+  margin-top: 15px;
+  padding-right: 40px;
+  font-size: 17px;
+  opacity: 0.0;
+  transition: opacity ease-in 700ms;
+  transition-delay: 800ms;
+}
+#portfolio .rm-container .rm-right .rm-back .tags {
+  text-align: left;
+  margin-left: -125px;
+  margin-top: 10px;
+  padding-right: 40px;
+  opacity: 0.0;
+  transition: opacity ease-in 700ms;
+  transition-delay: 800ms;
+}
+#portfolio .rm-container .rm-right .rm-back .tags .tag {
+  display: inline-block;
+  margin-right: 6px;
+  margin-top: 8px;
+  padding: 3px 6px 0px;
+  background: #0f899f;
+  color: #fff;
+}
+#portfolio .rm-container .rm-right .rm-back .links {
+  padding-right: 40px;
+  margin-top: 25px;
+  opacity: 0.0;
+  transition: opacity ease-in 700ms;
+  transition-delay: 800ms;
+}
+#portfolio .rm-container .rm-right .rm-back .links a {
+  font-size: 18px;
+  margin-bottom: -10px;
+  display: inline-block;
+}
+#portfolio .rm-container .rm-right .rm-back .links i {
+  margin-left: 25px;
+  font-size: 40px;
+}
+#portfolio .rm-container.rm-open .rm-cover .rm-front {
+  opacity: 0.0;
+}
+#portfolio .rm-container.rm-open .rm-middle .rm-inner {
+  overflow: visible;
+}
+#portfolio .rm-container.rm-open .rm-middle .rm-inner .mac-pic {
+  opacity: 1.0;
+}
+#portfolio .rm-container.rm-open .rm-middle .rm-inner .mac-screen-pic {
+  opacity: 1.0;
+}
+#portfolio .rm-container.rm-open .rm-right .rm-back .close-icon {
+  opacity: 1.0;
+}
+#portfolio .rm-container.rm-open .rm-right .rm-back .port-logo {
+  opacity: 1.0;
+}
+#portfolio .rm-container.rm-open .rm-right .rm-back .port-desc {
+  opacity: 1.0;
+}
+#portfolio .rm-container.rm-open .rm-right .rm-back .tags {
+  opacity: 1.0;
+}
+#portfolio .rm-container.rm-open .rm-right .rm-back .links {
+  opacity: 1.0;
 }
 #portfolio .rm-container:hover .rm-cover .rm-front .hover-pattern {
   opacity: 1.0;
