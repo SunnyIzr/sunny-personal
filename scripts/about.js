@@ -17,9 +17,25 @@ var AboutView = {
     $(el).addClass('mi-selected');
   },
   showSection: function(el){
-    $('.about-section.selected').hide()
     $('.about-section.selected').removeClass('selected');
-    $($(el).data('target')).show()
-    $($(el).data('target')).addClass('selected');
+    setTimeout(function(){
+      $('.about-section.revealed').removeClass('revealed');
+      $($(el).data('target')).addClass('revealed')
+      setTimeout(function(){
+        $($(el).data('target')).addClass('selected')
+      },100)
+    },400)
+  },
+  showSlider: function(){
+    $('.about-slider').show();
+    setTimeout(function(){
+      $('.about-slider').css('opacity','1.0')
+    },900)
+  },
+  hideSlider: function(){
+    $('.about-slider').css('opacity','0.0')
+    setTimeout(function(){
+      $('.about-slider').hide();
+    },100)
   }
 }

@@ -4,6 +4,32 @@ var Portfolio = {
     this.selectMint();
     this.selectStats();
     this.closePort();
+    this.initView();
+  },
+  initView: function(){
+    $('.nav-list-item').click(function(){
+      if ($(this).hasClass('portfolio-nav')) {
+        setTimeout(function(){
+          Portfolio.showView();
+        },1500)
+      } else{
+        setTimeout(function(){
+          Portfolio.hideView();
+        },2000)
+      }
+    })
+  },
+  showView: function(){
+    $('.cover-overlay').addClass('hide-cover-overlay')
+    setTimeout(function(){
+      $('.inner-content').addClass('show-inner-content')
+    },1700)
+  },
+  hideView: function(){
+    $('.cover-overlay').removeClass('hide-cover-overlay')
+    setTimeout(function(){
+      $('.inner-content').removelass('show-inner-content')
+    },2000)
   },
   selectZoraab: function(){
     $('#rm-zoraab .rm-cover .rm-front').click(function(e){

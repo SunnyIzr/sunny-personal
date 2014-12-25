@@ -2,5 +2,9 @@ $(document).ready(function(){
   Nav.init();
   About.init();
   Portfolio.init();
-  
+  Skills.init();
+  Home.init();
+  Services.init();
+  Interests.init();
+  Contact.init();
 })

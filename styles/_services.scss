@@ -1,0 +1,106 @@
+#services{
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 10px;
+  h1{
+    font-size: 60px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 300;
+    max-width: 1000px;
+    margin-top: 25px;
+  }
+  .services-list{
+    max-width: 650px;
+    margin: 0 auto;
+    .service{
+      margin-bottom: 30px;
+      -webkit-transition: all 600ms ease;
+         -moz-transition: all 600ms ease;
+          -ms-transition: all 600ms ease;
+           -o-transition: all 600ms ease;
+              transition: all 600ms ease;
+
+      -webkit-transform-origin: 50% 50%;
+         -moz-transform-origin: 50% 50%;
+          -ms-transform-origin: 50% 50%;
+           -o-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      .icon{
+        float: left;
+        width: 30%;
+        opacity: 0.2;
+        img{
+          width: 100%;
+        }
+      }
+      h2{
+        float: right;
+        width: 68%;
+        text-align: left;
+        text-transform: none;
+        margin-top: 50px;
+        color: #000;
+        font-size:30px;
+      }
+      .line-sep{
+        border-bottom: 1px solid $primary-color;
+        width: 100%;
+        height: 30px;
+      }
+      .clear{
+        clear: both;
+      }
+    }
+    .service2{transition-delay: 300ms}
+    .service3{transition-delay: 600ms}
+    .service4{transition-delay: 1200ms}
+    
+    .service.future{
+      -webkit-transform: scale( 0.01 );
+       -moz-transform: scale( 0.01 );
+        -ms-transform: scale( 0.01 );
+         -o-transform: scale( 0.01 );
+            transform: scale( 0.01 ); 
+    }
+  }
+}
+
+
+// MEDIUM DESKTOPS
+@media (max-width: 1200px) { 
+} 
+
+// TABLETS
+@media (max-width: 992px) { 
+} 
+
+// LARGE PHONES
+@media (max-width: 768px) {
+} 
+
+// Med PHONES
+@media (max-width: 500px) {
+  #services .services-list h2{
+    font-size: 22px;
+  }
+} 
+
+// IPHONE
+@media (max-width: 450px) {
+  #services .services-list .service .icon{
+    width: 100%;
+    text-align: center;
+    img{
+      width: 150px;
+    }
+  }
+  #services .services-list .service h2{
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+} 
+

@@ -5,6 +5,19 @@ $accent-color: #0f899f;
 $accent-hover-color: #05c1e3;
 $emphasis-color: #000000;
 $emphasis-hover-color: #000000;
+$background-color: #f5f0eb;
+
+@import 'contact';
+
+@import 'typed-cursor';
+
+@import 'nav-effect';
+
+@import 'skillset';
+
+@import 'skills';
+
+@import 'services';
 
 @import 'polaroids';
 
@@ -18,15 +31,34 @@ $emphasis-hover-color: #000000;
 
 @import 'home';
 
-@import 'nav';
-
 @import 'bootstrap';
 
 
 body{
   font-family: $primary-font, serif;
   color: #696969;
-  max-width: 1600px;
   margin: 0 auto;
+  background: $background-color;
 }
+
+
+// MEDIUM DESKTOPS
+@media (max-width: 1200px) { 
+} 
+
+// TABLETS
+@media (max-width: 992px) { 
+} 
+
+// LARGE PHONES
+@media (max-width: 768px) {
+} 
+
+// Med PHONES
+@media (max-width: 600px) {
+} 
+
+// IPHONE
+@media (max-width: 450px) {
+} 
 

@@ -1,5 +1,11 @@
+#homePage{
+  height: 100%;
+  overflow: hidden;
+}
 #home{
+  padding-top: 55px;
   text-align: center;
+  min-height: 100%;
   h1{
     font-size: 100px;
     font-weight: 300;
@@ -11,17 +17,40 @@
     margin-top: 45px;
  } 
  .end-greet{
-    text-align: right;
+    text-align: left;
     margin-bottom: 45px;
+    width: 50%;
+    float: right;
   .name{
     color: $accent-color;
   } 
  }
+ .clear{
+  clear: both;
+ }
  .sub-header{
     font-size: 22px;
+    p{
+      margin-top: 100%;
+      transition: 900ms ease-out margin;
+    }
+    .first{
+      transition-delay: 0s;
+    }
+    .second{
+      transition-delay: 400ms;
+    }
+    .third{
+      transition-delay: 900ms;
+    }
+    .show-text{
+      margin-top: 0;
+    }
  }
  .call-to-action{
-  margin-top: 45px;
+  margin-top: 100%;
+  transition: 1000ms ease-out all;
+  margin-bottom: 300px;
   .btn{
     background: transparent;
     padding: 15px 30px;
@@ -31,8 +60,82 @@
     transition: ease-in 200ms;
   }
   .btn:hover{
-    background: $accent-color;
+    background: #0e7183;
+    border-color: #0e7183;
+    color: #fff;
+  }
+ }
+ .show-call-to-action{
+  margin-top: 45px;
+ }
+ .color-call-to-action{
+  .btn{
+    background-color: $accent-color;
     color: #fff;
   }
  }
 }
+
+// MEDIUM DESKTOPS
+@media (max-width: 1200px) { 
+} 
+
+// TABLETS
+@media (max-width: 992px) { 
+  #home{
+    .end-greet{
+      width: 55%;
+    }
+  }
+} 
+
+// LARGE PHONES
+@media (max-width: 768px) {
+    #home{
+      h1{
+        font-size: 65px;
+      }
+      .start-greet{
+        width: 100%;
+        text-align: center;
+      }
+      .end-greet{
+        width: 100%;
+        text-align: center;
+      }
+      .sub-header{
+        font-size: 16px;
+      }
+      .call-to-action{
+        .btn{
+          font-size: 18px;
+        }
+      }
+  }
+} 
+
+// Med PHONES
+@media (max-width: 600px) {
+  #home{
+    .sub-header{
+      p{
+        margin-top: 150%;
+      }
+    }
+    .call-to-action{
+      margin-top: 150%;
+    }
+    .show-call-to-action{
+      margin-top: 45px;
+    }
+  }
+} 
+
+// IPHONE
+@media (max-width: 400px) {
+  #home{
+    h1{
+      font-size: 50px;
+    }
+  }
+} 
