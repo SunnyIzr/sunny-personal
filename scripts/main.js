@@ -5,6 +5,10 @@ $(document).ready(function(){
   Skills.init();
   Home.init();
   Services.init();
-  Interests.init();
   Contact.init();
+})
+
+$(window).load(function() {
+  $("#interests").removeClass('hide');
+  Interests.init();
 })

@@ -21,6 +21,7 @@
 }
 
 .rm-wrapper .rm-cover {
+  // z-index: 100;
   z-index: 100;
   -webkit-transform-origin: 0% 50%;
   -webkit-transition-delay: 0.2s;
@@ -58,6 +59,7 @@
 
 .rm-container .rm-front,
 .rm-container .rm-back {
+  -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }

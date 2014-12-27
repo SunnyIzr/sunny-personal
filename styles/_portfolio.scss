@@ -90,11 +90,11 @@
       .rm-back{
         border-right-color: #fff;
         text-align: left;
-        .mac-pic{
+        .mac1-pic{
           width: 150%;
-          margin-top: 65px;
-          margin-left: 40px;
-          visibility: hidden;
+          
+          // margin-top: 65px;
+          // margin-left: 40px;
         }
       }
     }
@@ -110,18 +110,16 @@
           margin-top: 65px;
           margin-left: -90%;
           transition: opacity ease-in 700ms;
-          transition-delay: 800ms;
         }      
         .mac-screen-pic{
+          opacity: 0.0;
           width: 136.8%;
           position: absolute;
           top: 0;
           left: 0;
           margin-top: 89px;
           margin-left: -83.5%;
-          opacity: 0.0;
           transition: opacity ease-in 700ms;
-          transition-delay: 800ms;
         }
       }
     }
@@ -132,7 +130,6 @@
         .close-icon{
           opacity: 0.0;
           transition: opacity ease-in 700ms;
-          transition-delay: 800ms;
           svg{
             width: 15%;
             height: 15%;
@@ -144,7 +141,6 @@
         .port-logo{
           opacity: 0.0;
           transition: opacity ease-in 700ms;
-          transition-delay: 800ms;
           width: 50%;
           margin-top: -15px;
           margin-right: 40px;
@@ -157,7 +153,6 @@
           font-size: 17px;
           opacity: 0.0;
           transition: opacity ease-in 700ms;
-          transition-delay: 800ms;
         }
         .tags{
           text-align: left;
@@ -166,7 +161,6 @@
           padding-right: 40px;
           opacity: 0.0;
           transition: opacity ease-in 700ms;
-          transition-delay: 800ms;
           .tag{
             display: inline-block;
             margin-right: 6px;
@@ -181,7 +175,6 @@
           margin-top: 25px;
           opacity: 0.0;
           transition: opacity ease-in 700ms;
-          transition-delay: 800ms;
           a{
             font-size: 18px;
             margin-bottom: -10px;
@@ -200,15 +193,31 @@
     }
   }
   
+  .rm-container.firefox-z-fix{
+    .rm-cover{
+      z-index:initial;
+    }
+  }
+  
   .rm-container.rm-open{
     .rm-cover{
       .rm-front{
         opacity: 0.0;
       }
     }
+  }
+  
+  .rm-container.display-overflow{
     .rm-middle{
       .rm-inner{
         overflow: visible;
+      }
+    }
+  }
+  
+  .rm-container.display-info{
+    .rm-middle{
+      .rm-inner{
         .mac-pic{
           opacity: 1.0;
         }
@@ -257,6 +266,7 @@
   #rm-mint{
     left: 50%;
     transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);;
     .rm-cover .rm-front .logo{
       max-width: 220px;
     }
@@ -307,11 +317,13 @@
   
   #rm-zoraab.selected{
     transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
     left: 50%;
   }
   
   #rm-stats.selected{
     transform: translate(50%, 0%);
+    -webkit-transform: translate(50%, 0%);
     right: 50%;
   }
   

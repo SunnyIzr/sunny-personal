@@ -295,6 +295,11 @@
 		display: inherit;
 		height: 45px;
 		margin: 0;
+		line-height: initial;
+		a{
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
 	}
 	.bt-overlay{
 		display: none;

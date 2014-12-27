@@ -1,11 +1,12 @@
 var Interests = {
   init: function(){
+    this.initPolaroids();
     this.navInterests()
     this.figureFlip();
     this.figureFlipBack();
   },
   navInterests: function(){
-    $('.nav-list-item').click(function(){
+    $(document).on('click', '.nav-list-item', function(){
       if ($(this).hasClass('interests-nav')){
         setTimeout(function(){
           window.scrollTo(0,0)
@@ -27,5 +28,10 @@ var Interests = {
       e.preventDefault();
       photoStack._rotateItem($('.photostack-current'))
    })
+  },
+  initPolaroids: function(){
+    window.photoStack = new Photostack( document.getElementById( 'photostack-2' ), {
+      callback : function( item ) {}
+    })
   }
 }

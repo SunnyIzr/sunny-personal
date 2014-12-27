@@ -37,6 +37,12 @@ var Portfolio = {
       PortfolioView.focusZoraab();
       setTimeout( function(){
         $('#rm-zoraab').addClass('rm-open')
+        setTimeout( function(){
+          $('#rm-zoraab').addClass('display-info')
+          if ( navigator.userAgent.search('Firefox') > -1) {
+            $("#rm-zoraab").addClass('firefox-z-fix')
+          }
+        },850)
       }, 700)
     })
   },
@@ -46,6 +52,12 @@ var Portfolio = {
       PortfolioView.focusMint();
       setTimeout( function(){
         $('#rm-mint').addClass('rm-open')
+        setTimeout( function(){
+          $('#rm-mint').addClass('display-info')
+          if ( navigator.userAgent.search('Firefox') > -1) {
+            $("#rm-mint").addClass('firefox-z-fix')
+          }
+        },850)
       }, 700)
     })
   },
@@ -55,6 +67,12 @@ var Portfolio = {
       PortfolioView.focusStats();
       setTimeout( function(){
         $('#rm-stats').addClass('rm-open')
+        setTimeout( function(){
+          $('#rm-stats').addClass('display-info')
+          if ( navigator.userAgent.search('Firefox') > -1) {
+            $("#rm-stats").addClass('firefox-z-fix')
+          }
+        },850)
       }, 700)
     })
   },
@@ -73,10 +91,14 @@ var PortfolioView = {
     $('#portfolio .unselected-stats').removeClass('unselected-stats');
   },
   closeOpenSection: function(){
-    $('.rm-container.rm-open').removeClass('rm-open')
+    $('.rm-container.rm-open').removeClass('display-info')
+    setTimeout( function(){
+      $('.rm-container.rm-open').removeClass('firefox-z-fix')
+      $('.rm-container.rm-open').removeClass('rm-open')
+    },800)
     setTimeout(function(){
       PortfolioView.clearFocus();
-    }, 700)
+    },1400)
   },
   focusMint: function(){
     $('#rm-zoraab').addClass('unselected-mint');

@@ -138,3 +138,20 @@
 
       
 }
+
+@media (max-width: 768px) {
+  #contact{ #form_wrap {height:825px;top:-200px;} } 
+  #contact { #form_wrap form {
+    height:900px;
+    input[type=text]{
+      z-index: 10;
+      // transition-delay: 0ms;
+    }
+    input[type=submit]{
+      transition-delay: 0s;
+    }
+  }}
+  #contact{
+    #form_wrap:hover input[type=submit] {z-index:1;opacity:1;}
+  }
+}
